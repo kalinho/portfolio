@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background: rgb(4,14,39);
+    background: radial-gradient(circle, rgba(4,14,39,1) 0%, rgba(82,96,134,1) 25%, rgba(82,96,134,1) 75%, rgba(4,14,39,1) 100%);
+    border-bottom: 25px solid white;
+}
+
+
+nav {
+    background-color: #526086;
+    margin: 0 auto;
+    width: 560px;
+    display: flex;
+}
+  
+.hexagon {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #040E27;
+    opacity: 0.9;
+    clip-path: polygon(50% 5%, 90% 33%, 90% 67%, 50% 95%, 10% 67%, 10% 33%);
+    margin-bottom: 150px;
+    transition: 0.6s ease-in-out;
+}
+
+.hexagon:hover {
+    opacity: 0.6;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+#hex1 {
+    position: absolute;
+    top: 10px;
+}
+
+#hex2 {
+    position: absolute;
+    top: 135px;
+    margin-left: 80px;
+}
+
+#hex3 {
+    position: absolute;
+    top: 10px;
+    margin-left: 160px;
+}
+
+#hex4 {
+    position: absolute;
+    top: 135px;
+    margin-left: 240px;
+}
+
+#hex5 {
+    position: relative;
+    top: 10px;
+    margin-left: 320px;
+}
+
+p {
+    color: rgba(255,255,255,0.7);
+    padding: 10px;
+    font-size: 26px;
+    transition: 0.15s ease-in;
+}
+
+.hexagon:hover >p {
+    font-size: 30px;
+    transition: 0.05s ease-in;
+}
+
+.hexagon:active >p {
+    color: rgba(255,255,255,1);
+    transition: 0.05s ease-in;
+}
+
+main {
+    background-image: url("img/hexa.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #526086;
+    background-blend-mode:multiply;
+    height: 500px;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.test {
+    width: 60%;
+    height: 150px;
+    position: absolute;
+    padding: 30px;
+}
+
+#test1 {
+    background-color: white;
+    display: block;
+}
+
+#test2 {
+    background-color: white;
+    display: none;
+}
+
+#test3 {
+    background-color: white;
+    display: none;
+}
+
+#test4 {
+    background-color: white;
+    display: none;
+}
+
+#test5 {
+    background-color: white;
+    display: none;
+}
