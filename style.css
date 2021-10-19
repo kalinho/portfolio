@@ -1,7 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    padding-left: 30px;
+}
+
+p.hex-paragraph {
+    color: rgba(255,255,255,0.7);
+    padding: 10px;
+    font-size: 26px;
+    transition: 0.15s ease-in;
 }
 
 header {
@@ -67,19 +90,12 @@ nav {
     margin-left: 320px;
 }
 
-p {
-    color: rgba(255,255,255,0.7);
-    padding: 10px;
-    font-size: 26px;
-    transition: 0.15s ease-in;
-}
-
-.hexagon:hover >p {
+.hexagon:hover >p.hex-paragraph {
     font-size: 30px;
     transition: 0.05s ease-in;
 }
 
-.hexagon:active >p {
+.hexagon:active >p.hex-paragraph {
     color: rgba(255,255,255,1);
     transition: 0.05s ease-in;
 }
@@ -90,17 +106,16 @@ main {
     background-attachment: fixed;
     background-color: #526086;
     background-blend-mode:multiply;
-    height: 500px;
+    
     display: flex;
-    justify-content:center;
+    justify-content: center;
     
 }
 
 .test {
     width: 60%;
-    height: 150px;
-    position: absolute;
-    padding: 30px;
+    min-width: 28em;
+    padding: 0px 10px;
 }
 
 #test1 {
@@ -126,4 +141,35 @@ main {
 #test5 {
     background-color: white;
     display: none;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.project-card {
+    border: 2px solid #040E27;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 25em;
+}
+
+h3 {
+    width: 200px;
+    width: 100%;
+}
+
+.project-pic {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.project-text {
+    width: 250px;
 }

@@ -5,22 +5,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
         <title>Kalinho</title>
     </head>
 
     <body>
         <header>
+            
             <nav>
-                <div class="hexagon" id="hex1"><p>About me</p></div>
-                <div class="hexagon" id="hex2"><p>Portfolio</p></div>
-                <div class="hexagon" id="hex3"><p>Skills</p></div>
-                <div class="hexagon" id="hex4"><p>Contact</p></div>
-                <div class="hexagon" id="hex5"><p>Misc</p></div>
+                <div class="hexagon" id="hex1"><p class="hex-paragraph">About me</p></div>
+                <div class="hexagon" id="hex2"><p class="hex-paragraph">Portfolio</p></div>
+                <div class="hexagon" id="hex3"><p class="hex-paragraph">Skills</p></div>
+                <div class="hexagon" id="hex4"><p class="hex-paragraph">Contact</p></div>
+                <div class="hexagon" id="hex5"><p class="hex-paragraph">Misc</p></div>
             </nav>
         </header>
         <main>
-            <div class="test" id="test1">About Me</div>
-            <div class="test" id="test2">Portfolio</div>
+            <div class="test" id="test1">
+                <h1>Karl Söderström</h1>
+                <h2 id="offset">Web Developer</h2>
+            </div>
+            <div class="test" id="test2">
+                <section class="project">
+                    <div class="project-card">
+                        <h3>Number Guesser</h3>
+                        <img src="img/hexa.png" class="project-pic">
+                        <p class="project-text">This was a project on Codecademy where I had to write some javascript to complete a number guesser game.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Tea Cozy</h3>
+                        <img src="img/hexa.png" class="project-pic">
+                        <p class="project-text">In this Codecademy project my skills in HTML and CSS were tested.</p>
+                    </div>
+                </section>
+            </div>
             <div class="test" id="test3">Skills</div>
             <div class="test" id="test4">Contact</div>
             <div class="test" id="test5">Misc</div>
