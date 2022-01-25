@@ -1,3 +1,4 @@
+// Logo animation--------------------------------
 const logo = document.getElementById('logo');
 
 let i = 1;
@@ -14,6 +15,8 @@ function changeLogo() {
 
 window.addEventListener("load", changeLogo);
 
+
+// Handle hamburger menu----------------------------
 const toggleButton = document.getElementsByClassName('toggle-menu')[0];
 const navLinks = document.getElementsByClassName('nav-links')[0];
 
@@ -27,3 +30,29 @@ navLinks.addEventListener('click', () => {
     }
     
 })
+
+
+// Handle routing------------------------------------
+const routes = {
+    '/' : home,
+    '/index.html': home,
+    '/about' : about,
+    '/portfolio' : portfolio,
+    '/contact' : contact
+  };
+  
+  const rootDiv = document.getElementById('root');
+  rootDiv.innerHTML = routes[window.location.pathname];
+  
+  const onNavigate = (pathname) => {
+    window.history.pushState(
+      {},
+      pathname,
+      window.location.origin + pathname
+    )
+    rootDiv.innerHTML = routes[pathname]
+  }
+  
+  window.onpopstate = () => {
+    rootDiv.innerHTML = routes[window.location.pathname]
+  }

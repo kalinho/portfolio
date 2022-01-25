@@ -9,6 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="home.js"></script>
+        <script src="about.js"></script>
+        <script src="portfolio.js"></script>
+        <script src="contact.js"></script>
         <title>Kalinho</title>
     </head>
 
@@ -23,17 +27,17 @@
                 </a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li onclick="onNavigate('/'); return false;"><a href="#">Home</a></li>
+                        <li onclick="onNavigate('/about'); return false;"><a href="#">About</a></li>
+                        <li onclick="onNavigate('/portfolio'); return false;"><a href="#">Portfolio</a></li>
+                        <li onclick="onNavigate('/contact'); return false;"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
         </body>
         <main>
-            <div>
+            <div id="root">
                 
             </div>
         </main>
